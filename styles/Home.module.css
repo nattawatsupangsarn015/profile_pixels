@@ -1,5 +1,12 @@
 .container {
   padding: 0 2rem;
+  background-image: url("../pages/resources/background.webp");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #05112f;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main {
@@ -13,6 +20,7 @@
 }
 
 .footer {
+  height: 10vh;
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -113,4 +121,45 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.header {
+  height: 10vh;
+}
+
+.content {
+  height: 80vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalCase {
+  height: 100%;
+  width: 100%;
+  background: #0000004a;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes showMessage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.welcomeMessage {
+  font-size: 10rem;
+  color: white;
+  animation-name: showMessage;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
 }
